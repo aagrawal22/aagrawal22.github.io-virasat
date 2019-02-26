@@ -3,10 +3,12 @@
     // 'use strict';
 
     // Main Navigation
-    $( '.hamburger-menu' ).on( 'click', function() {
+  $( '.hamburger-menu' ).on( 'click', function(event) {
         $(this).toggleClass('open');
         $('.site-navigation').toggleClass('show');
+        event.stopPropagation();
     });
+
 
     // Hero Slider
     var mySwiper = new Swiper('.hero-slider', {
@@ -227,5 +229,20 @@
             }, 800);
         });
     }
+
+  $(document).on('click touch',function(){
+    
+   if( ($('nav div').hasClass('open')) && ($('nav').hasClass('show'))
+        ){
+       
+         
+            $('.hamburger-menu').removeClass('open',function(){
+                console.log("Class removed")
+            });
+        $('.site-navigation').removeClass('show');
+        
+        
+    }
+    });
 
 })(jQuery);
