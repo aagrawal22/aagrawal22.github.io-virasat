@@ -237,7 +237,7 @@ a:hover, a:active {
     overflow-x: scroll;
     padding: 30px;
     margin: 0;
-    background: #9a28d7;
+    background: #CE911E;
     transition: all 0.35s;
 }
 
@@ -1159,8 +1159,9 @@ a:hover, a:active {
 }
 
 .events-list-page .single-event {
-    display: none;
+
     margin-bottom: 30px;
+    
 }
 
 .events-list-page .single-event.visible {
@@ -2157,7 +2158,7 @@ ul.tabs-nav .tab-nav.active {
     margin-top: -21px;
     border: 2px solid #fff;
     border-radius: 50%;
-    background: #9a28d7;
+    background: #CE911E;
     transition: all .35s;
     cursor: pointer;
 
