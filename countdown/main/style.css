@@ -1087,6 +1087,10 @@ a:hover, a:active {
         font-size: 16px;
         
     }
+     .page-header .entry-tagline{
+        font-size: 22px;
+        
+    }/*extra added*/
 }
 
 @media screen and (min-width: 992px){
